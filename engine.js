@@ -29,7 +29,7 @@
   set('#storyKicker',cfg.story.kicker); setHTML('#storyTitle',cfg.story.title.map(x=>`${x}<br>`).join('')); set('#storyBody',cfg.story.body);
   const sf=$('#storyFacts'); cfg.story.facts.forEach(x=>{const d=document.createElement('div');d.textContent=x;sf.appendChild(d)});
   set('#storeKicker',cfg.store.kicker); setHTML('#storeTitle',cfg.store.title.map(x=>`${x}<br>`).join('')); set('#storeAddress',cfg.store.address); set('#storeHours',cfg.store.hours); set('#storePhone',cfg.store.phone);
-  $('#mapLink').href=cfg.store.maps; $('#waLink').href=`https://wa.me/${cfg.store.whatsapp}`; $('#menuLocation').textContent=cfg.store.address; $('#menuWhatsapp').href=`https://wa.me/${cfg.store.whatsapp}`;
+  $('#mapLink').href=cfg.store.maps; $('#waLink').href=`https://wa.me/${cfg.store.whatsapp}`; $('#floatingMaps').href=cfg.store.maps; $('#floatingContact').href=`https://wa.me/${cfg.store.whatsapp}`; $('#menuLocation').textContent=cfg.store.address; $('#menuWhatsapp').href=`https://wa.me/${cfg.store.whatsapp}`;
   set('#rating',cfg.reviews.rating); set('#reviewCount',cfg.reviews.count); set('#reviewTitle',cfg.reviews.title); set('#reviewBody',cfg.reviews.body);
   setHTML('#contactTitle',cfg.contact.title.map(x=>`${x}<br>`).join('')); set('#contactMeta',`${site.brandName} · ${cfg.store.address}`); $('#instagramLink').href=cfg.contact.instagram; $('#contactWa').href=`https://wa.me/${cfg.contact.whatsapp}`;
 

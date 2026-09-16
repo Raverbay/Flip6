@@ -113,6 +113,27 @@
 
   <section id="contact" class="contact section-pad"><span class="micro reveal">06 / CONTACT</span><h2 id="contactTitle" class="contact-title heading-reveal"></h2><div class="contact-row reveal"><span id="contactMeta" class="micro"></span><div><a id="instagramLink" class="pill" target="_blank" rel="noopener">INSTAGRAM ↗</a><a id="contactWa" class="pill dark" target="_blank" rel="noopener">START A CONVERSATION ↗</a></div></div></section>
 </main>
+
+<div class="floating-actions" aria-label="Azioni rapide">
+  <a id="floatingContact" class="floating-action" href="https://wa.me/393661087819" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
+    <span class="floating-icon whatsapp-icon" aria-hidden="true">↗</span>
+    <span>CONTATTACI</span>
+  </a>
+  <a id="floatingMaps" class="floating-action floating-action-map" href="https://www.google.com/maps/search/?api=1&query=Via+Italia+22%2C+Cagliari" target="_blank" rel="noopener" aria-label="Visita il negozio su Maps">
+    <span class="floating-icon" aria-hidden="true">⌖</span>
+    <span>VISITA SU MAPS</span>
+  </a>
+</div>
+<style>
+/* V9 — always-visible quick actions */
+.floating-actions{position:fixed!important;left:50%!important;right:auto!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;transform:translateX(-50%)!important;z-index:2147483647!important;display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;align-items:center!important;gap:0!important;padding:4px!important;border:1px solid rgba(17,18,15,.22)!important;border-radius:999px!important;background:rgba(244,242,236,.94)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;box-shadow:0 10px 30px rgba(0,0,0,.28)!important}
+.floating-actions .floating-action{display:flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:42px!important;padding:0 18px!important;border-radius:999px!important;color:#11120f!important;background:transparent!important;text-decoration:none!important;font:800 9px/1 Manrope,Arial,sans-serif!important;letter-spacing:.12em!important;white-space:nowrap!important}
+.floating-actions .floating-action:hover{background:#11120f!important;color:#f4f2ec!important}
+.floating-actions .floating-action-map{border-left:1px solid rgba(17,18,15,.16)!important;border-radius:0 999px 999px 0!important}
+.floating-actions .floating-icon{width:20px!important;height:20px!important;display:grid!important;place-items:center!important;border:1px solid currentColor!important;border-radius:50%!important;font-size:11px!important}
+@media(max-width:520px){.floating-actions{left:12px!important;right:12px!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;transform:none!important;width:auto!important}.floating-actions .floating-action{flex:1!important;min-height:44px!important;padding:0 8px!important;font-size:8px!important;letter-spacing:.09em!important}}
+</style>
+
 <footer><div class="section-pad footer-inner"><div><img id="footerLogo" alt="Flip&Co"><span class="micro">FLIP&CO · CAGLIARI · SINCE 1986</span></div><div class="footer-links"><a href="#campaign">Edit</a><a href="#worlds">Worlds</a><a href="#brands">Brands</a><a href="#story">Story</a><a href="#store">Store</a></div><span class="micro">MEDIA­BAY FASHION MASTER THEME · 2026</span></div></footer>
 <script src="engine.js"></script>
 </body>

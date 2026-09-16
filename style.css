@@ -135,3 +135,42 @@ footer{background:var(--bg);color:var(--ink)}.footer-inner{padding-top:32px;padd
   .editorial-overlay{padding:18px}
   .editorial-caption{font-size:11px}
 }
+
+
+/* V8 — persistent contact / maps dock */
+.floating-actions{
+  position:fixed;
+  z-index:80;
+  right:clamp(14px,2vw,28px);
+  bottom:max(16px,env(safe-area-inset-bottom));
+  display:flex;
+  align-items:center;
+  gap:0;
+  padding:4px;
+  border:1px solid rgba(17,18,15,.16);
+  border-radius:999px;
+  background:rgba(244,242,236,.90);
+  -webkit-backdrop-filter:blur(16px) saturate(115%);
+  backdrop-filter:blur(16px) saturate(115%);
+  box-shadow:0 12px 34px rgba(0,0,0,.16);
+}
+.floating-action{
+  display:flex;align-items:center;gap:8px;
+  min-height:38px;padding:0 14px;
+  border-radius:999px;
+  color:#11120f;background:transparent;
+  font-size:9px;font-weight:800;letter-spacing:.13em;
+  white-space:nowrap;
+  transition:background .25s ease,color .25s ease,transform .25s ease;
+}
+.floating-action:hover{background:#11120f;color:#f4f2ec;transform:translateY(-1px)}
+.floating-action-map{border-left:1px solid rgba(17,18,15,.14);border-radius:0 999px 999px 0}
+.floating-action-map:hover{border-left-color:transparent}
+.floating-icon{width:19px;height:19px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-size:11px;line-height:1}
+.whatsapp-icon{font-weight:700}
+@media(max-width:520px){
+  .floating-actions{left:14px;right:14px;bottom:max(12px,env(safe-area-inset-bottom));justify-content:stretch;padding:4px}
+  .floating-action{flex:1;justify-content:center;min-height:42px;padding:0 8px;font-size:8px;letter-spacing:.10em}
+  .floating-action-map{border-left:1px solid rgba(17,18,15,.14)}
+}
+@media(prefers-reduced-motion:reduce){.floating-action{transition:none}}
