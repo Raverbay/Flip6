@@ -11,7 +11,7 @@
   const setHTML=(id,v)=>{const e=$(id);if(e)e.innerHTML=v||''};
   const asset=n=>n?`assets/${n}`:'';
 
-  ['#navLogo','#heroLogo','#footerLogo'].forEach(sel=>{const e=$(sel);if(e)e.src=asset(cfg.hero.logo)});
+  ['#navLogo','#heroLogo','#footerLogo'].forEach(sel=>{const e=$(sel);if(!e)return; const rel=asset(cfg.hero.logo); e.src=rel; e.onerror=()=>{e.onerror=null; e.src='./assets/logo-flipco.png';};});
   set('#heroKicker',cfg.hero.kicker); set('#heroMeta',cfg.hero.meta);
   setHTML('#heroHeadline',cfg.hero.headline.map(x=>`<span>${x}</span>`).join(''));
   set('#introTitle',site.introTitle); set('#introLead',site.introLead); set('#introBody',site.introBody);

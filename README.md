@@ -31,3 +31,6 @@ Upload the contents of this folder to the repository root, preserving `assets/`.
 
 
 V5 FINAL: centered logo header, language left, menu right, translucent header, and only three supplied Flip&Co visual sources (logo + editorial campaign + store entrance).
+
+
+Logo asset: `assets/logo-flipco.png` (exact filename/case). All site references use this exact path.
